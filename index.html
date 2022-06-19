@@ -90,15 +90,9 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-        if (toDoItem) {
-          const li = document.createElement("li");
-          li.textContent = toDoItem;
-          return li;
-        }else{
-          alert('Can not be empty!!!');
-          input.focus();
-          return false;
-        }
+        const li = document.createElement("li");
+        li.textContent = toDoItem;
+        return li;
       }
 
       // TODO: register event onclick / addEventListener untuk button
